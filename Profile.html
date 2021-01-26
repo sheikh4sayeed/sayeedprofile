@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Sayeed's Profile</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<link rel="stylesheet" href="main.css">
+</head>
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Style the header */
+header {
+  background-color:black;
+  padding: 10px;
+  text-align: center;
+  font-size: 35px;
+  color: white;
+  margin-right:0px;
+}
+
+/* Container for flexboxes */
+section {
+  display: -webkit-flex;
+  display: flex;
+}
+
+/* Style the navigation menu */
+nav {
+  -webkit-flex: 0;
+  -ms-flex: 0;
+  flex: 0;
+  background:#000033;
+  padding: 5px;
+  border-color:black;
+}
+
+/* Style the list inside the menu */
+nav ul {
+  list-style-type: none;
+  padding:20px;
+  border-color:red;
+  margin-top:10px;
+}
+
+/* Style the content */
+article {
+  -webkit-flex: 3;
+  -ms-flex: 3;
+  flex: 20;
+  background-color: #ffffff;
+  padding: 10px;
+}
+
+/* Style the footer */
+footer {
+  background-color:#000000;
+  padding: 1px;
+  text-align: center;
+  color: white;
+}
+
+/* Responsive layout - makes the menu and the content (inside the section) sit on top of each other instead of next to each other */
+@media (max-width: 600px) {
+  section {
+    -webkit-flex-direction: column;
+    flex-direction: column;
+  }
+}
+h2{
+color:#afb6af;
+}
+
+ol
+{
+list-style-type:none;
+margin:;
+padding:0px;
+width:320px;
+background-color:#f1f1f1;
+
+
+}
+#student {
+  font-family: Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+#student td, #student th {
+  border: 1px solid #ddd;
+  padding: 10px;
+}
+
+#student tr:nth-child(even){background-color: #21405e;}
+
+#student tr:hover {background-color: #b380ff;}
+
+#student th {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  text-align: left;
+  background-color: #006699;
+  color: white;
+  }
+  p.n{
+  color:#21405e;
+  text-align:center;
+  font-family:Arial;
+  font-size:30px;
+  
+  }
+  
+  
+  div.web
+  {
+  color:#21405e;
+  padding:30px 40px 50px 50px;
+  border:2px solid black;
+  font-size:30px;
+  background-color:#ffffff;
+  box-sizing:10px;
+  max-width:300px;
+  min-width:40px;
+  text-align:center;
+  
+  }
+    
+ div:hover
+ {
+ background-color:#000033;
+ color:#f2f2f2;
+ 
+ }
+ 
+ 
+  
+  div.play
+  {
+  color:#21405e;
+  padding:30px 40px 50px 50px;
+  border:2px solid black;
+  font-size:30px;
+  background-color:#ffffff;
+  box-sizing:10px;
+  max-width:300px;
+  min-width:40px;
+  text-align:center;
+ }
+ div.play:hover
+ 
+ {
+ background-color:#ff0000;
+ color:#f2f2f2;
+ 
+ }
+ 
+ 
+ 
+ 
+  
+  div.photo
+  {
+  color:#21405e;
+  padding:30px 40px 50px 50px;
+  border:2px solid black;
+  font-size:30px;
+  background-color:#ffffff;
+  box-sizing:10px;
+  max-width:300px;
+  min-width:40px;
+  text-align:center;
+  }
+  
+  div:hover
+ {
+ background-color:#000033;
+ color:#f2f2f2;
+ 
+ }
+
+ 
+ 
+ div.game
+ {
+  color:#21405e;
+  padding:30px 40px 50px 50px;
+  border:2px solid black;
+  font-size:30px;
+  background-color:#ffffff;
+  box-sizing:10px;
+  max-width:300px;
+  min-width:40px;
+  text-align:center;
+  }
+  
+  
+  div.game:hover
+ {
+ background-color:#ff0000;
+ color:#f2f2f2;
+ 
+ }
+ 
+ 
+ div.code
+  {
+  color:#21405e;
+  padding:30px 40px 50px 50px;
+  border:2px solid black;
+  font-size:30px;
+  background-color:#ffffff;
+  box-sizing:10px;
+  max-width:300px;
+  min-width:40px;
+  text-align:center;
+  }
+  
+  div:hover
+ {
+ background-color:#000033;
+ color:#f2f2f2;
+ 
+ }
+ 
+ 
+ 
+ div.song
+  {
+  color:#21405e;
+  padding:30px 40px 50px 50px;
+  border:2px solid black;
+  font-size:30px;
+  background-color:#ffffff;
+  box-sizing:10px;
+  max-width:300px;
+  min-width:40px;
+  text-align:center;
+ }
+ div.play:hover
+ 
+ {
+ background-color:#ff0000;
+ color:#f2f2f2;
+ 
+ }
+ 
+ 
+  p.quote{
+  color:#ff4000;
+  font-family:Times New Roman;
+  font-size:20px;
+  text-indent:30px;
+  }
+ 
+ h1.author{
+ text-align:center;
+ color:#ffff00;
+ }
+ <link
+ p.end{
+ 
+ font-size:50px;
+ color:white;
+ }
+ p.f{
+ text-align:center;
+ font-size:50px;
+ }
+ section.fb{
+ text-align:center;
+ }
+ 
+ nav.link
+ {
+ background-color:white;
+ padding:0;
+ }
+ 
+ ul.ss
+ { 
+ display:flex;
+ justify.content:center ;
+ }
+ ul li
+ {
+ display:inline;
+ padding:4px 4px;
+ background-color:#000033;
+ transition: all 0.7s ease;
+ margin:0 5px;
+ cursor:pointer;
+ 
+ }
+ ul li:hover
+ {
+ background-color:red;
+ }
+ ul li a
+ {
+ color:#0fff;
+ width=100%;
+ hight=100%;
+ }
+ 
+ 
+ 
+ 
+ 
+</style>
+
+<body>
+
+
+
+<header>
+<p >Hello There<span style="color:#ff0000";>!</span></p>
+  <h2>I<span style="color:#ff0000";>'</span>m Abu Sayeed <span style="color:#ff0000";>Khudri</span></h2>
+</header>
+
+<section>
+  <nav>
+    <img src="IMG_1030.jpg" alt="HTML tutorial"
+style="width:300px;height:200px;">
+<p class="quote"><q> Don't limit Yourself.Many people limit themselves to what they think they can do.You can go as far as your mind lets you.What you believe,remember,you can achieve.</q></p>
+<h1 class="author">-Mary kay Ash</h1>
+
+  </nav>
+  
+  <article>
+    <h1 ><u><b>Personal Information:</b></u></h1>
+	<ol class="u">
+	<li><b>Name<span style="color:red";>:</span></b>  Abu Sayeed Khudri</li>
+	
+	<li><b>Nick Name<span style="color:red";>:</span></b>Sayeed</li>
+	<li><b>Father's Name<span style="color:red";>:</span></b>Saiful Islam</li>
+	<li><b>Mother's Name<span style="color:red";>:</span></b>Sahinur Akter</li>
+	<li><b>Sex<span style="color:red";>:</span></b>Male</li>
+	<li><b>Age<span style="color:red";>:</span></b>21 Years</li>
+	<li><b>Marital Status<span style="color:red";>:</span></b>Unmarried</li>
+	<li><b>Languages Known<span style="color:red";>:</span></b>Bangla,English & Hindi</li>
+	</ol>
+	<br>
+	<h1><u><b>Education Qualification:</u></b></h1>
+	
+	<table id="student">
+	<tr>
+	<th>Name of the exam</th>
+	
+	<th>Group/Subject</th>
+	<th>Board/University</th>
+	<th>passing Year</th>
+	</tr>
+	
+	<tr>
+	<td>S.S.C</td>
+	<td>Science</td>
+	
+	<td>Dhaka Board</td>
+	<td>2015</td>
+	</tr>
+	
+	
+	<tr>
+	<td>H.S.C</td>
+	<td>Science</td>
+	
+	<td>Dhaka Board</td>
+	<td>2017</td>
+	</tr>
+	<tr>
+	<td>B.S.C</td>
+	<td> Computer Science & Engineering</td>
+	
+	<td>Stamford University Bangladesh</td>
+	<td>2022</td>
+	</tr>
+	</table>
+	
+	
+	
+     
+  </article>
+  
+</section>
+
+<p class="n" ><b>WHAT I <span style="color:#ff0000";>LOVE </span>TO DO</b></p>
+<section>
+
+<section>
+<div class="web" > <strong>Web Design</strong></div>
+
+</section>
+<br>
+<br>
+<section>
+<div class="play",style="align:center";> <strong>Playing Card</strong></div>
+</section>
+<br>
+<section>
+<div class="photo"> <strong>Photography</strong></div>
+</section>
+<br>
+
+<section>
+<div class="game"> <strong>Play Games</strong> </div>
+
+</section>
+
+
+<section>
+<div class="code"> <strong>Coding</strong> </div>
+
+</section>
+
+<section>
+<div class="play"> <strong>Singing</strong> </div>
+
+</section>
+
+
+</section>
+
+
+
+<p class="f" ><b>Follow <span style="color:#ff0000";><abbr title="Social Media">Me</abbr> </span>!</b></p>
+
+
+<nav class="link">
+<ul class="ss">
+
+<li><a href="www.facebook.com"><i class="fab fa-facebook"></i></a></li>
+<li><a href="www.email.com"><i class="fas fa-envelope-square"></i></a></li>
+<li><a href="www.twitter.com"><i class="fab fa-twitter"></i></a></li>
+<li><a href="www.instagram.com"><i class="fab fa-instagram"></i></a></li>
+<li><a href="www.youtube.com"><i class="fab fa-youtube"></i></a></li>
+
+</ul>
+
+</nav>
+
+<script src="https://kit.fontawesome.com/5940797482.js" crossorigin="anonymous">
+</script>
+
+
+
+
+
+
+
+
+<footer>
+
+  <p class="end"><strong>Thanks</strong></p>
+</footer>
+<br>
+<address style="text-align:center";>
+By Abu Sayeed Khudri<br/>
+</address>
+<p style="text-align:center"; >
+&copy;Copyright sheikh's
+</p>
+</body>
+</html>
